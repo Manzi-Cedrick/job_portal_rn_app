@@ -15,6 +15,7 @@ const Login = () => {
         Fill your details or continue with social media
         </Text>
       </View>
+      
     </SafeAreaViewLayout>
   )
 }
