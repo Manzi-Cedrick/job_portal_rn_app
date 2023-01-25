@@ -7,7 +7,7 @@ const MainRoute = () => {
     const Stack = createStackNavigator();
   return (
     <Stack.Navigator>
-      <Stack.Screen name="welcome" component={Welcome} options={{
+      <Stack.Screen name="Welcome" component={Welcome} options={{
         headerShown: false
       }}/>
       <Stack.Screen name="Login" component={Login} options={{
