@@ -87,7 +87,7 @@ const Login = ({navigation}) => {
       <View style={tw`py-14`}>
         <View style={tw``}>
           <TouchableHighlight
-            onPress={() => Alert.alert('Login Successful')}
+            onPress={() => navigation.navigate('Dashboard')}
             activeOpacity={0.6}
             style={tw`bg-[#4CA6A8] py-5 rounded-sm text-white flex flex-row justify-center `}>
             <Text style={tw`text-white font-semibold`}>LOGIN</Text>
@@ -111,7 +111,9 @@ const Login = ({navigation}) => {
           </View>
           <View style={tw`py-4 flex flex-row justify-center`}>
             <Text>New user ?</Text>
-            <Text style={tw`text-black font-semibold ml-2`}>Create Account </Text>
+            <TouchableHighlight style={tw`text-blue-500 font-semibold ml-2`} onPress={()=> navigation.navigate('Signup')}>
+                <Text style={tw`text-blue-500`}>Get Started</Text>
+            </TouchableHighlight>          
           </View>
         </View>
       </View>
