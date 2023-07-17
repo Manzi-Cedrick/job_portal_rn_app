@@ -10,7 +10,7 @@ const CustomInput = ({ label, icon, error, password, onFocus = () => { }, ...pro
   const [hidePassword, setHidePassword] = useState(password);
 
   return (
-    <View style={tw``}>
+    <View>
       <Text style={tw`text-[12px] text-black font-normal`}>{label}</Text>
       <View style={tw` flex flex-row justify-start pt-3`}>
         <View

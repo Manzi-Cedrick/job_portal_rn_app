@@ -9,12 +9,12 @@ import GoogleSvg from '../assets/GoogleSvg';
 import FacebookSvg from '../assets/FacebookSvg';
 const Signup = ({navigation}) => {
   const [formdata, setformdata] = useState({
-    username : '',
+    username: '',
     email: '',
     password: '',
   });
   const [errors, setErrors] = useState({
-    username:'',
+    username: '',
     email: '',
     password: '',
   });
@@ -34,9 +34,9 @@ const Signup = ({navigation}) => {
       setErrors({...errors, email: 'Please Enter the correct email'});
       isValid = false;
     }
-    if (!formdata.username || formdata.password == '' ) {
-        setErrors({...errors,username: 'Please enter a valid username'})
-        isValid = false
+    if (!formdata.username || formdata.password == '') {
+      setErrors({...errors, username: 'Please enter a valid username'});
+      isValid = false;
     }
     if (!formdata.password || formdata.password === '') {
       setErrors({...errors, password: 'Please Enter the correct password'});

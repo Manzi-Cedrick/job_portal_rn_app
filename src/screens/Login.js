@@ -89,6 +89,7 @@ const Login = ({navigation}) => {
           <TouchableHighlight
             onPress={() => navigation.navigate('Dashboard')}
             activeOpacity={0.6}
+            underlayColor={'#00000087'}
             style={tw`bg-[#4CA6A8] py-5 rounded-sm text-white flex flex-row justify-center `}>
             <Text style={tw`text-white font-semibold`}>LOGIN</Text>
           </TouchableHighlight>
